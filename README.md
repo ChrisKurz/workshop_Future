@@ -11,7 +11,7 @@ In this repository, you will find the files you need for the hands-on session.
      - Zephyr's __blinky__ sample => see slides
      - [DeviceTree: Changing LED port pin](docs/HandsOn1-2_deviceTree.md)
      - [KCONFIG: Adding Zephyr Logging](docs/HandsOn1-3_kconfig.md)
-     - optional: Adding a custom KCONFIG
+     - optional: [Adding a custom KCONFIG](docs/HandsOn1-4_customKconfig.md)
 
 2) Bluetooth LE
      - Adding Bluetooth Beacon functionality
