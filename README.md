@@ -18,6 +18,7 @@ In this repository, you will find the files you need for the hands-on session.
      - Nordic's _Bluetooth LE LED and Button Service_ (LBS, see <code>nrf/sample/bluetooth/peripheral_lbs</code> sample) => see slides
      
 3) Nordic's Fuel Gauge Solution
+     - [Add a simulated sensor](docs/HandsOn3-1_simulatedSensor.md)
      - [Adding nPM2100 Fuel Gauge]()
      - [Send primary battery state of charge via Bluetooth to a smartphone]()
 
