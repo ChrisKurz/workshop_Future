@@ -4,7 +4,7 @@
 
        CONFIG_BT=y
 
-2) Add to _main.c_: include Bluetooth header files
+2) Add to _main.c_ (where the other <code>#include<...></code> instructions are located): include Bluetooth header files
 
        #include <zephyr/bluetooth/bluetooth.h>
 
