@@ -1,4 +1,4 @@
-# Future Electronics/Nordic Semiconductor Workshop: <br>_Kickstart Your Zephyr-RTOS Embedded Journey
+# Future Electronics/Nordic Semiconductor Workshop: <br>_Kickstart Your Zephyr-RTOS Embedded Journey_
 
 ## Workshop Dates/Locations
 > 24.March 2026, Dortmund <br>
