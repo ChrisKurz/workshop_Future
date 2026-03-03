@@ -14,7 +14,7 @@
    ![image](images/logging.jpg)
 
 
-2) In <code>main.c</code> file add following lines after the <code>#include <...></code> instructions.
+2) In __main.c__ file add following lines after the <code>#include <...></code> instructions.
 
        #include <zephyr/logging/log.h>
 
