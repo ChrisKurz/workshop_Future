@@ -48,31 +48,9 @@ There are several ways to change the LED pin. We will look at a few possibilitie
 
 ----- 
 
-## Option C:  Adding an Alias
+## Option C:  Using Node Label
 
-2) Add alias for the new custom led node group:
+2) Adapt in _main.c_: use NODELABEL to point to LED3 node.
 
-	     aliases {
-		       led0 = &my_led_1;
-	     };
-
-3) Complete _nrf54l15dk_nrf54l15_cpuapp.overlay_ file:
-
-	     / {
-           board_leds {
-               compatible = "gpio-leds";        
-               my_led_1: my_led1 {
-                   gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH)>;
-                   label = "My Green LED 1";
-               };
-           };
-           aliases {
-               led0 = &my_led_1;
-           };
-       };
-
-4) Adapt in _main.c_: revert the node Access back to the initially used alias led0
-
-       /* The devicetree node identifier for the "led0" alias. */
-	     #define LED0_NODE DT_ALIAS(led0)
-   
+       /* The devicetree node identifier for the "led3". */
+	     #define LED0_NODE DT_NODELABEL(led3)
