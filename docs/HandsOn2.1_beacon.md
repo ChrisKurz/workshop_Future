@@ -23,7 +23,7 @@
         BT_DATA(BT_DATA_NAME_COMPLETE, DEVICE_NAME, sizeof(DEVICE_NAME)-1),
     };
 
-5) Add to _main.c_ (just before <code>while (1) {</code>): initialize the Bluetooth stack and start Advertising
+4) Add to _main.c_ (just before <code>while (1) {</code>): initialize the Bluetooth stack and start Advertising
 
            // enable and init BTLE stack
            int err = bt_enable(NULL);
