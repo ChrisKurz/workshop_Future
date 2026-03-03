@@ -14,7 +14,9 @@ Let's start by modifying the LED used:
 
    ![image](images/Create_overlay_file.jpg)
 
-There are several options for changing the LED pin. Select one:
+There are several ways to change the LED pin. We will look at a few possibilities here. 
+
+-----
 
 ## Option A:  Modify led0 definition in overlay file
   
