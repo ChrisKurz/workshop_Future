@@ -53,4 +53,4 @@ There are several ways to change the LED pin. We will look at a few possibilitie
 2) Adapt in _main.c_: use NODELABEL to point to LED3 node.
 
        /* The devicetree node identifier for the "led3". */
-	     #define LED0_NODE DT_NODELABEL(led3)
+	   #define LED0_NODE DT_NODELABEL(led3)
