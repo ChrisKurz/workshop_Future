@@ -8,8 +8,8 @@
 In this repository, you will find the files you need for the hands-on session. 
 
 1) Getting started: IDE overview and Embedded Systems "hello world" (Blinky project)
-     - Zephyr's __blinky__ sample
-     - Changing LED port pin by using DeviceTree
+     - Zephyr's __blinky__ sample => see slides
+     - [DeviceTree: Changing LED port pin](docs/HandsOn1-2_deviceTree.md)
      - KCONFIG example: Adding Zephyr Logging
      - optional: Adding a custom KCONFIG
 
