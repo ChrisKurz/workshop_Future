@@ -12,6 +12,8 @@ Let's start by modifying the LED used:
 
 1) Create overlay file: nrf54l15dk_nrf54l15_cpuapp.overlay
 
+   ![image](images/Crerate_overlay_file.jpg)
+
 There are several options for changing the LED pin. Select one:
 
 ## Option A:  Modify led0 definition in overlay file
