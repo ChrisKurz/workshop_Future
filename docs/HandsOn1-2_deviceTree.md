@@ -10,7 +10,7 @@ Used pins for LEDs on nRF54L15DK:
 
 Let's start by modifying the LED used: 
 
-1) Create overlay file: nrf54l15dk_nrf54l15_cpuapp.overlay
+1) Create overlay file: <code>nrf54l15dk_nrf54l15_cpuapp.overlay</code>
 
    ![image](images/Create_overlay_file.jpg)
 
