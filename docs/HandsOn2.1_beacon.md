@@ -10,7 +10,7 @@
 
 3) Add to _main.c_ (just before <code>int main(void)</code>): add Bluetooth advertising data (data will be sent when we start advertising).
 
-> __IMPORTANT:__ __Use your own Device Name here!!!__
+> __IMPORTANT:__ __Use your own Device Name here instead of <code>My BT Device</code> string!!!__
 
        /* The BLE adv packet can hold a total of 31 bytes, 3 bytes are taken to indicate BT data flags (LE only, */
        /* no BR/EDR support) + 2 bytes are taken to indicate BT complete local Name (0x09) and the length of the */
