@@ -20,7 +20,7 @@ In this repository, you will find the files you need for the hands-on session.
 3) Nordic's Fuel Gauge Solution
      - optional: [Add a simulated sensor](docs/HandsOn3-1_simulatedSensor.md)
      - [Adding nPM2100 Fuel Gauge](docs/HandsOn3-2_fuelGauge.md)
-     - [Send primary battery state of charge via Bluetooth to a smartphone]()
+     - [Send primary battery state of charge via Bluetooth to a smartphone](docs/HandsOn3-3_BAS.md)
 
 
 ## Workshop Slides
