@@ -18,13 +18,13 @@
 
 3) in _main.c_ (just before <code>for (;;) {</code> line): Add initialization of simulated sensor:
    
-	     #define SENSOR_NODE DT_NODELABEL(sensor_sim)
-         const struct device *const dev = DEVICE_DT_GET(SENSOR_NODE);
-         if (!device_is_ready(dev)) {
-             printk("Sensor is not ready %s\n", dev->name);
-             return 0;
-         }
-         printk("Sensor is ready!\n");
+	       #define SENSOR_NODE DT_NODELABEL(sensor_sim)
+           const struct device *const dev = DEVICE_DT_GET(SENSOR_NODE);
+           if (!device_is_ready(dev)) {
+               printk("Sensor is not ready %s\n", dev->name);
+               return 0;
+           }
+           printk("Sensor is ready!\n");
 
 4) In _main.c_ (in <code>for (;;) {</code> loop): Call processing function
 
