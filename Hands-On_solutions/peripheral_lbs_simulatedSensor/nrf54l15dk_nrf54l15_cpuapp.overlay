@@ -1,0 +1,8 @@
+/ {
+    sensor_sim: sensor_sim{
+    compatible = "nordic,sensor-sim";
+    acc-signal = "wave";
+    base-temperature = < 20 >;
+    base-pressure = < 98 >;
+    };
+};
