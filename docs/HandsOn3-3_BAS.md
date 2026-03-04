@@ -4,6 +4,7 @@
 
 2) add to prj.conf: enable BT BAS Service
 
+       # Enable Battery Service (BAS) Bluetooth profile
        CONFIG_BT_BAS=y
 
 3) add to main.c
