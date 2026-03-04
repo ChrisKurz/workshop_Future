@@ -151,7 +151,6 @@
                return -1;
            }
            printk("Fuel gauge initialised using model %s\n", FG_model.name);
-           // other initialisation functions
 
 7) In _main.c_ (just after <code>for (;;) {</code> line): call fuel_gauge_update() funciton
 
