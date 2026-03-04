@@ -11,17 +11,20 @@ In this repository, you will find the files you need for the hands-on session.
      - Zephyr's __blinky__ sample => see slides
      - [DeviceTree: Changing LED port pin](docs/HandsOn1-2_deviceTree.md)
      - [KCONFIG: Adding Zephyr Logging](docs/HandsOn1-3_kconfig.md)
-     - optional: Adding a custom KCONFIG
+     - optional: [Adding a custom KCONFIG](docs/HandsOn1-4_customKconfig.md)
 
 2) Bluetooth LE
-     - Adding Bluetooth Beacon functionality
-     - [Nordic's _Bluetooth LE LED and Button Service_ (LBS, see <code>nrf/sample/bluetooth/peripheral_lbs</code> sample)]()
+     - [Adding Bluetooth Beacon functionality](docs/HandsOn2.1_beacon.md)
+     - Nordic's _Bluetooth LE LED and Button Service_ (LBS, see <code>nrf/sample/bluetooth/peripheral_lbs</code> sample) => see slides
      
 3) Nordic's Fuel Gauge Solution
-     - [Adding nPM2100 Fuel Gauge]()
-     - [Send primary battery state of charge via Bluetooth to a smartphone]()
+     - optional: [Add a simulated sensor](docs/HandsOn3-1_simulatedSensor.md)
+     - [Adding nPM2100 Fuel Gauge](docs/HandsOn3-2_fuelGauge.md)
+     - [Send primary battery state of charge via Bluetooth to a smartphone](docs/HandsOn3-3_BAS.md)
 
 
 ## Workshop Slides
-- [Introduction and _nRF Connect SDK_ Overview]()
-- 
+- [Introduction and _nRF Connect SDK_ Overview](presentation/Intro_and_nRF-Connect-SDK.pdf) 
+- [1. Hands-on: IDE Overview & Blinky Application, DeviceTree and KCONFIG](presentation/01_Hands-on_Blinky.pdf)
+- [2. Hands-on: Bluetooth LE -> Beacon and LED & Button Service (LBS)](presentation/02_Hands-on_LBS_Service.pdf)
+- [3. Hands-on: Nordic's Fuel Gauge Solution](presentation/03_Hands-on_Nordic_PMIC.pdf)
