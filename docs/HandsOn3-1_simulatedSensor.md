@@ -4,6 +4,7 @@
 
        # Enable Sensor Driver
        CONFIG_SENSOR=y
+       CONFIG_CBPRINTF_FP_SUPPORT=y
 
 2) Create _nRF54l15dk_nrf54l15_cpuapp_ overlay file. And add following lines:
 
