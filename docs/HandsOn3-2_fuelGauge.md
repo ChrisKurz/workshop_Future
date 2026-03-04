@@ -2,9 +2,9 @@
 
   > __NOTE:__  Output voltage of nPM2100EK is 3.0V. So, please change VDD on nRF54L15DK to 3000mV. => _nRF Connect for Desktop_ => _Board Configurator_
 
-1) Create DTS overlay file (if not existing already): nrf54l15dk_nrf54l15_cpuapp.overlay
+1) Create DTS overlay file (if not existing already): _nrf54l15dk_nrf54l15_cpuapp.overlay_
 
-2) Add to nrf54l15dk_nrf54l15_cpuapp.overlay: selected pins for the I2C peripheral use:
+2) Add to _nrf54l15dk_nrf54l15_cpuapp.overlay_: selected pins for the I2C peripheral use:
 
        &pinctrl {
            i2c21_default: i2c21_default {
@@ -24,7 +24,7 @@
               };
        };
 
-3) Add to nrf54l15dk_nrf54l15_cpuapp.overlay: enable i2c21 peripheral and add npm2100-ek
+3) Add to _nrf54l15dk_nrf54l15_cpuapp.overlay_: enable i2c21 peripheral and add npm2100-ek
 
        &i2c21 {
            status = "okay";
@@ -43,21 +43,21 @@
            };
        };
 
-4) Add to prj.conf: SW configuration, enable libraries for fuel gauge
+4) Add to _prj.conf_: SW configuration, enable libraries for fuel gauge
 
        CONFIG_SENSOR=y
        CONFIG_NRF_FUEL_GAUGE=y
        CONFIG_NRF_FUEL_GAUGE_VARIANT_PRIMARY_CELL=y
        CONFIG_REQUIRES_FLOAT_PRINTF=y
 
-5) Add to main.c: include headers
+5) Add to _main.c_: include headers
 
        #include <zephyr/kernel.h>
        #include <zephyr/device.h>
        #include <zephyr/drivers/sensor.h>
        #include <nrf_fuel_gauge.h>
 
-6) Add to main.c: include global variables for fuel gauge
+6) Add to _main.c_: include global variables for fuel gauge
 
        // Global variables for fuel gauge
        static int64_t ref_time;
@@ -70,7 +70,7 @@
         */
        static const float battery_current = 5e-3f;
 
-7) Add to main.c: internal functions to retrieve sensor values, initialize the fuel gauge, and update the algorithm periodically
+7) Add to _main.c_: internal functions to retrieve sensor values, initialize the fuel gauge, and update the algorithm periodically
 
        static int read_sensors(const struct device *vbat, float *voltage, float *temp)
        {
@@ -139,7 +139,7 @@
            return 0;
        }
 
-8) Add to main.c: int main(void) - Main Routine Integration
+8) Add to _main.c_: int main(void) - Main Routine Integration
 
            printk("nPM2100 Fuel Gauge integration on %s\n", CONFIG_BOARD_TARGET);
 
