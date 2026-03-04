@@ -66,7 +66,7 @@
         */
        static const float battery_current = 5e-3f;
 
-5) Add to _main.c_ (just before <coce>int main(void)</code> function): internal functions to retrieve sensor values, initialize the fuel gauge, and update the algorithm periodically
+5) Add to _main.c_ (just before <code>int main(void)</code> function): internal functions to retrieve sensor values, initialize the fuel gauge, and update the algorithm periodically
 
        static int read_sensors(const struct device *vbat, float *voltage, float *temp)
        {
