@@ -135,7 +135,7 @@
            return 0;
        }
 
-6) Add to _main.c_: int main(void) - Main Routine Integration
+6) Add to _main.c_ (just before <code>for (;;) {</code> line): init calls for fuel gauge
 
            printk("nPM2100 Fuel Gauge integration on %s\n", CONFIG_BOARD_TARGET);
 
@@ -153,8 +153,6 @@
            printk("Fuel gauge initialised using model %s\n", FG_model.name);
            // other initialisation functions
 
-           // main infinite loop
-           while (1) {
+7) In _main.c_ (just after <code>for (;;) {</code> line): call fuel_gauge_update() funciton
+
                fuel_gauge_update(vbat);
-               k_msleep(1000);
-           }
