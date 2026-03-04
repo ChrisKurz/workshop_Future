@@ -18,7 +18,7 @@
 
 3) in _main.c_ (just before <code>for (;;) {</code> line): Add initialization of simulated sensor:
    
-	       #define SENSOR_NODE DT_NODELABEL(sensor_sim)
+	     #define SENSOR_NODE DT_NODELABEL(sensor_sim)
          const struct device *const dev = DEVICE_DT_GET(SENSOR_NODE);
          if (!device_is_ready(dev)) {
              printk("Sensor is not ready %s\n", dev->name);
