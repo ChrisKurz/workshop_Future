@@ -13,4 +13,5 @@
 
 4) Update/set the BAS Service characteristic for the battery Level. This could be done inside of fuel_gauge_update() for example, with (float) soc being the state of charge, returned from the FG algorithm
 
+       bt_bas_set_battery_level((uint8_t)soc);
       
