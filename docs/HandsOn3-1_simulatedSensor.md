@@ -28,7 +28,7 @@
 
 4) In _main.c_ (in <code>for (;;) {</code> loop): Call processing function
 
-             process_sample(dev);
+               process_sample(dev);
 
 5) In _main.c_ (just after <code>#include <...></code> instructions): add processing function
 
