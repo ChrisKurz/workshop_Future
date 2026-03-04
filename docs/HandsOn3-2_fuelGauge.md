@@ -4,7 +4,7 @@
 
 1) Create DTS overlay file (if not existing already): _nrf54l15dk_nrf54l15_cpuapp.overlay_
 
-2) Add to _nrf54l15dk_nrf54l15_cpuapp.overlay_: selected pins for the I2C peripheral use:
+2) Add to _nrf54l15dk_nrf54l15_cpuapp.overlay_: Enable i2c21 peripheral and select pins for the I2C peripheral. Add npm2100-ed.
 
        &pinctrl {
            i2c21_default: i2c21_default {
@@ -24,8 +24,6 @@
               };
        };
 
-3) Add to _nrf54l15dk_nrf54l15_cpuapp.overlay_: enable i2c21 peripheral and add npm2100-ek
-
        &i2c21 {
            status = "okay";
            pinctrl-0 = <&i2c21_default>;
@@ -43,21 +41,19 @@
            };
        };
 
-4) Add to _prj.conf_: SW configuration, enable libraries for fuel gauge
+3) Add to _prj.conf_: SW configuration, enable libraries for fuel gauge
 
        CONFIG_SENSOR=y
        CONFIG_NRF_FUEL_GAUGE=y
        CONFIG_NRF_FUEL_GAUGE_VARIANT_PRIMARY_CELL=y
        CONFIG_REQUIRES_FLOAT_PRINTF=y
 
-5) Add to _main.c_: include headers
+4) Add to _main.c_ (just after the other <code>#include <...></code> instructions): include header files and add global variables for fuel gauge
 
        #include <zephyr/kernel.h>
        #include <zephyr/device.h>
        #include <zephyr/drivers/sensor.h>
        #include <nrf_fuel_gauge.h>
-
-6) Add to _main.c_: include global variables for fuel gauge
 
        // Global variables for fuel gauge
        static int64_t ref_time;
@@ -70,7 +66,7 @@
         */
        static const float battery_current = 5e-3f;
 
-7) Add to _main.c_: internal functions to retrieve sensor values, initialize the fuel gauge, and update the algorithm periodically
+5) Add to _main.c_: internal functions to retrieve sensor values, initialize the fuel gauge, and update the algorithm periodically
 
        static int read_sensors(const struct device *vbat, float *voltage, float *temp)
        {
@@ -139,7 +135,7 @@
            return 0;
        }
 
-8) Add to _main.c_: int main(void) - Main Routine Integration
+6) Add to _main.c_: int main(void) - Main Routine Integration
 
            printk("nPM2100 Fuel Gauge integration on %s\n", CONFIG_BOARD_TARGET);
 
