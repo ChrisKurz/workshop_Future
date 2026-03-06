@@ -24,7 +24,8 @@ In this repository, you will find the files you need for the hands-on session.
 
 
 ## Workshop Slides
-- [Introduction and _nRF Connect SDK_ Overview](presentations/Intro_and_nRF-Connect-SDK.pdf) 
-- [1. Hands-on: IDE Overview & Blinky Application, DeviceTree and KCONFIG](presentations/01_Hands-on_Blinky.pdf)
-- [2. Hands-on: Bluetooth LE -> Beacon and LED & Button Service (LBS)](presentations/02_Hands-on_LBS_Service.pdf)
-- [3. Hands-on: Nordic's Fuel Gauge Solution](presentations/03_Hands-on_Nordic_PMIC.pdf)
+- [Introduction and _nRF Connect SDK_ Overview](presentations/1_Intro_and_nRF-Connect-SDK.pdf) 
+- [1. Hands-on: IDE Overview & Blinky Application, DeviceTree and KCONFIG](presentations/2_Hands-on_Blinky.pdf)
+- [2. Hands-on: Bluetooth LE -> Beacon and LED & Button Service (LBS)](presentations/3_Hands-on_Bluetooth.pdf)
+- [3. Hands-on: Nordic's Fuel Gauge Solution](presentations/4_Hands-on_FuelGauge_Sensor.pdf)
+- [Wrap-up](presentations/5_Nordic_Wrap-up.pdf)
