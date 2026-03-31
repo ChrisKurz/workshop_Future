@@ -5,14 +5,6 @@
        # Enable Logging
        CONFIG_LOG=y
 
-   Or, if you want to enable Zephyr logging via the KCONFIG tool:
-   a) open the KCONFIG GUI tool,
-   b) search for Logging,
-   c) and enable it.
-   d) Press _Save to File_ button and select <code>prj.conf</code> file.
-
-   ![image](images/logging.jpg)
-
 
 2) In __main.c__ file add following lines after the <code>#include <...></code> instructions.
 
